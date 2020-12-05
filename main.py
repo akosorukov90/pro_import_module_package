@@ -4,6 +4,7 @@ from application.db.people import get_employees
 
 
 if __name__ == '__main__':
-    print(f'Текущая дата: {datetime.datetime.now()}')
+    now = datetime.datetime.now()
+    print(f'Текущая дата: {now.strftime("%d.%m.%Y")}')
     calculate_salary()
     get_employees()
